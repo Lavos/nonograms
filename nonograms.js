@@ -13,7 +13,7 @@ var test = [
 
 
 
-var NanoGrams = function NanoGrams (params) {
+var NonoGrams = function NanoGrams (params) {
 
 	var ng = this;
 
