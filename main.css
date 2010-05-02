@@ -1,0 +1,51 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+}
+
+html div { height: 0; }
+html>body div { height: auto; }
+
+/* Float Container */
+.flc, .CB { clear: both; }
+.flc:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+	/* IE6 work-around \*/
+	* html .flc { height: 1%; }
+	
+	/* IE7 work-around */
+	html > body .flc { height: auto; max-height: 12000000px; }
+
+
+#master { width: 450px; margin: 0 auto; }
+
+	#master .column-master { }	
+		#master .column-master .left { width: 125px; float: left; background-color: yellow; padding: 22px 0 0 0; }	
+		#master .column-master .right { width: 300px; float: right; background-color: red; }	
+
+	#master table { }
+	#master table td { font-size: 12px; vertical-align: center; }
+
+	#master table#yguide { float: right; }
+	#master table#yguide td { height: 22px; text-align: right; }
+
+	#master table#xguide td { width: 22px; text-align: center; }
+
+	#master table#grid { }
+	#master table#grid td { height: 22px; width: 22px; background-color: #ccc; }
+	#master table#grid td.success { background-color: black; }
+	#master table#grid td.failure { background-color: orange; }
+	#master table#grid td { background-color: white; }
